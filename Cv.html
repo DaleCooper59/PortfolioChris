@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DUVINAGE Christopher Portfolio</title>
+
+    <link rel="icon" href="./img/ico/imageedit_5_4201947283.ico">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/15217372e6.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div id="overlay-presentation" class="overlay"></div>
+    <div id="overlay-project" class="overlay"> </div>
+    <div id="overlay-CV" class="overlay"></div>
+
+
+    <div class="all-page">
+
+        <div id="space"><button id="cross-menu" onclick="openMenu()">
+                <svg class="ham ham2 stroke2" viewBox="0 0 100 100" width="80"
+                    onclick="this.classList.toggle('active')">
+                    <path class="line top"
+                        d="m 70,33 h -40 c -6.5909,0 -7.763966,-4.501509 -7.763966,-7.511428 0,-4.721448 3.376452,-9.583771 13.876919,-9.583771 14.786182,0 11.409257,14.896182 9.596449,21.970818 -1.812808,7.074636 -15.709402,12.124381 -15.709402,12.124381" />
+                    <path class="line middle" d="m 30,50 h 40" />
+                    <path class="line bottom"
+                        d="m 70,67 h -40 c -6.5909,0 -7.763966,4.501509 -7.763966,7.511428 0,4.721448 3.376452,9.583771 13.876919,9.583771 14.786182,0 11.409257,-14.896182 9.596449,-21.970818 -1.812808,-7.074636 -15.709402,-12.124381 -15.709402,-12.124381" />
+                </svg>
+            </button></div>
+
+        <header class="header">
+
+            <div class="menu">
+
+                <ul class="social-item" id="social-item">
+                    <li><i class="fab fa-github"></i></li>
+                    <li><i class="fab fa-linkedin-in"></i></li>
+                    <li><i class="fab fa-twitter"></i></li>
+                    <li><i class="fab fa-facebook-f"></i></li>
+                </ul>
+                <ul class="list-item" id="list-item">
+                    <li><a href="./index.html" id="projects-index">Presentation</a></li>
+                    <li><a href="projects.html" id="projects-link">Projects </a></li>
+                    <li><a href="Cv.html" id="CV-link">Cv</a></li>
+                    <button id="cross-menu-close" onclick="closeMenu()">
+                        <svg class="ham ham3 stroke3" viewBox="0 0 100 100" width="80"
+                            onclick="this.classList.toggle('active')">
+                            <path class="line top"
+                                d="m 70,33 h -40 c -11.092231,0 11.883874,13.496726 -3.420361,12.956839 -0.962502,-2.089471 -2.222071,-3.282996 -4.545687,-3.282996 -2.323616,0 -5.113897,2.622752 -5.113897,7.071068 0,4.448316 2.080609,7.007933 5.555839,7.007933 2.401943,0 2.96769,-1.283974 4.166879,-3.282995 2.209342,0.273823 4.031294,1.642466 5.857227,-0.252538 v -13.005715 16.288404 h 7.653568" />
+                            <path class="line middle"
+                                d="m 70,50 h -40 c -5.6862,0 -8.534259,5.373483 -8.534259,11.551069 0,7.187738 3.499166,10.922274 13.131984,10.922274 11.021777,0 7.022787,-15.773343 15.531095,-15.773343 3.268142,0 5.177031,-2.159429 5.177031,-6.7 0,-4.540571 -1.766442,-7.33533 -5.087851,-7.326157 -3.321409,0.0092 -5.771288,2.789632 -5.771288,7.326157 0,4.536525 2.478983,6.805271 5.771288,6.7" />
+                            <path class="line bottom"
+                                d="m 70,67 h -40 c 0,0 -3.680675,0.737051 -3.660714,-3.517857 0.02541,-5.415597 3.391687,-10.357143 10.982142,-10.357143 4.048418,0 17.88928,0.178572 23.482143,0.178572 0,2.563604 2.451177,3.403635 4.642857,3.392857 2.19168,-0.01078 4.373905,-1.369814 4.375,-3.392857 0.0011,-2.023043 -1.924401,-2.589191 -4.553571,-4.107143 -2.62917,-1.517952 -4.196429,-1.799562 -4.196429,-3.660714 0,-1.861153 2.442181,-3.118811 4.196429,-3.035715 1.754248,0.0831 4.375,0.890841 4.375,3.125 2.628634,0 6.160714,0.267857 6.160714,0.267857 l -0.178571,-2.946428 10.178571,0 -10.178571,0 v 6.696428 l 8.928571,0 -8.928571,0 v 7.142858 l 10.178571,0 -10.178571,0" />
+                        </svg>
+                    </button>
+                </ul>
+            </div>
+        </header>
+        <div class="ligth-container">
+            <button id="btnLigther" onclick="btnLigthSwitch()"></button>
+        </div>
+
+        <div id="title-cv">
+            <h1 id="title-project"> Mes expériences</h1>
+        </div>
+
+
+        <div class="main-cv">
+            <img id="info-cv" width="100%" src="./img/CSS.jpg" alt="">
+            <div class="sub-main1">
+
+            </div>
+            <div class="sub-main2">
+                <div class="img-contain">
+
+                    <img id="img-cv" src="" width="300px" height="300px" alt="">
+                </div>
+                <div class="corps-cv">
+                    <h2 id="dev-cv"><strong>Développeur et Intégrateur Web</strong> </h2>
+                    <div id="lottie-div">
+                        <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_3RQQni.json" id="lottie1"
+                            background="transparent" speed="1" style="width: 200px; height: 200px;" hover autoplay>
+                        </lottie-player>
+                        <small>credit to <a href="https://lottiefiles.com/27428-development">lime</a> </small>
+                    </div>
+                    <hr>
+                    <h2 id="h2-cv"> Qui suis-je</h2>
+                    <p>Véritable passionné par le développement Web et tout ce qui se trame sur Internet en général
+                        depuis plusieurs années, ma curiosité m'amène a être en constante évolution.
+                        M'étant formé en autodidacte, je cherche constamment à perfectionner mon travail.
+                        J'ai une personnalité de nature curieuse. J'aime beaucoup lire et apprendre.
+                        Je cherche le challenge et sait m'adapter aux besoins exprimés.
+                    </p>
+                    <h2> Mes expériences</h2>
+                    <p>J'ai eu un parcours très atypique qui m'a permis de me forger l'esprit et être capable
+                        d'affronter tous types de situations.
+                        De formation juridique (6 ans), je suis passé par l'animation puisj'ai été Gendarme. Cela m'a
+                        valut une expérience hors du commun mais en paralèlle,
+                        j'ai toujours accordé du temps à ma passion pour le développement Web.
+                        Depuis quelques années je peux m'y consacrer plus amplement.
+                    </p>
+                    <h2> Mes compétences</h2>
+                    <p id="last-p"> J'ai commencé en me posant cette question : Comment est ce qu'une page internet
+                        fonctionne?
+                        <span> En effet qui ne s'est jamais demandé comment fonctionne une page internet, qu'est ce qui
+                            se cache derrière des pages animées, colorées, remplies de fonctionnalités?. </span>
+                        J'ai donc commencé à apprendre le language de structuration <b>HTML 5</b>.
+                        Ensuite j'ai appris à stylisé avec le <b>CSS 3</b>.
+                        Puis j'ai découvert la véritable programmation à travers le <b>Javascript</b>.
+
+                        En effet que serait une page internet sans le côté dynamique. Au fur et à mesure de mon
+                        apprentissage j'ai également aqcuis de nombreuses compétences autour de ces languages.
+                        Notamment l'utilisation de frameworks CSS ( Bootstrap, Bulma, ...), de librairies Javascript, de
+                        CMS (Wordpress) Github, Git, Sass, etc.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <footer>
+            <div class="footer-container">
+                <form id="form" class="form">
+                    <div class="form-control">
+                        <label for="username">Nom et prénom</label>
+                        <input type="text" placeholder="Duvinage Christopher" id="username" />
+                        <i class="fas fa-sun"></i>
+                        <i class="fas fa-cloud-rain"></i>
+                        <small>Erreur</small>
+                        <span class="small">succès</span>
+                    </div>
+                    <div class="form-control">
+                        <label for="email">Email</label>
+                        <input type="email" placeholder="duvinagechristopher1@gmail.com" id="email" />
+                        <i class="fas fa-sun"></i>
+                        <i class="fas fa-cloud-rain"></i>
+                        <small>Erreur</small>
+                        <span class="small">succès</span>
+                    </div>
+                    <div class="form-control">
+                        <label for="textarea">Champ de texte</label>
+                        <textarea cols="35" rows="6"
+                            placeholder="N'hésitez pas à me demander les renseignements qu'ils vous faut"
+                            id="textarea"></textarea>
+                        <i class="fas fa-sun"></i>
+                        <i class="fas fa-cloud-rain"></i>
+                        <small>Message erreur</small>
+                        <span class="small">succes</span>
+                    </div>
+
+                    <div class="end-form">
+
+                        <div class="checkbox">
+                            <input type="checkbox" name="validate-rgpd" value="1" id="checkboxInput" required>
+                            <label for="checkboxInput" class="rgpd-label"> </label>
+                        </div>
+                        <button type="submit" class="form-btn btn-white btn-animate"> envoyer</button>
+
+                    </div>
+                    <span id="cf">En laissant apparaitre le "Oui", vous acceptez notre politique de
+                        confidentialité.</span>
+                </form>
+
+                <div class="footer-list-info">
+                    <div class="footer-div">
+                        <h4>Contact</h4>
+
+                        <ul id="footer-ul1">
+                            <li>DUVINAGE Christopher</li>
+                            <li>06 16 95 16 88</li>
+                            <li>duvinagechristopher1@gmail.com</li>
+                            <li>www.duvinage-christopher.com</li>
+                        </ul>
+                    </div>
+                    <div class="footer-div">
+                        <h4>Reseaux</h4>
+
+                        <ul id="footer-ul2">
+                            <li> <a href="#" style="color: rgb(10,102,194);" class="li-social-foot">Linkedin</a> </li>
+                            <li> <a href="#" style="color: rgb(26,145,218);" class="li-social-foot">Twitter</a> </li>
+                            <li> <a href="#" style="color: rgb(45,136,255);" class="li-social-foot">Facebook</a> </li>
+
+                        </ul>
+                    </div>
+                    <div class="footer-div">
+                        <h4>Autre</h4>
+
+                        <ul id="footer-ul3">
+                            <li><a href="/mentions-légales.html">Politique de confidentialité</a></li>
+                            <li>Les cookies</li>
+                            <li>Milk</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+            <p class="copyrigth"> copyright <span class="copyR"></span> Dalecooper59 - Tous droits réservés</p>
+            <p class="copyrigth"> copyright <a href="https://github.com/theDavidBarton/twin-peaks-api">David Barton -
+                    Api Twin peaks</a> </p>
+        </footer>
+    </div>
+    <div id="ligth-content" class="ligth"></div>
+
+    <script async src="portfolio.js" ></script>
+    <script async src="https://unpkg.com/@lottiefiles/lottie-player@0.4.0/dist/lottie-player.js"></script>
+
+
+</body>
+
+</html>
