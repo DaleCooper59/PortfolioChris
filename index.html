@@ -210,10 +210,10 @@
 
         <footer>
             <div class="footer-container">
-                <form id="form" class="form">
+                <form action="form.php" method="POST" id="form" class="form">
                     <div class="form-control">
                         <label for="username">Nom et prénom</label>
-                        <input type="text" placeholder="Duvinage Christopher" id="username" />
+                        <input type="text" placeholder="Duvinage Christopher" id="username" name="username" />
                         <i class="fas fa-sun"></i>
                         <i class="fas fa-cloud-rain"></i>
                         <small>Erreur</small>
@@ -221,7 +221,7 @@
                     </div>
                     <div class="form-control">
                         <label for="email">Email</label>
-                        <input type="email" placeholder="duvinagechristopher1@gmail.com" id="email" />
+                        <input type="email" placeholder="duvinagechristopher1@gmail.com" id="email" name="email" />
                         <i class="fas fa-sun"></i>
                         <i class="fas fa-cloud-rain"></i>
                         <small>Erreur</small>
@@ -231,7 +231,7 @@
                         <label for="textarea">Champ de texte</label>
                         <textarea cols="35" rows="6"
                             placeholder="N'hésitez pas à me demander les renseignements qu'ils vous faut"
-                            id="textarea"></textarea>
+                            id="textarea" name="textarea"></textarea>
                         <i class="fas fa-sun"></i>
                         <i class="fas fa-cloud-rain"></i>
                         <small>Message erreur</small>
